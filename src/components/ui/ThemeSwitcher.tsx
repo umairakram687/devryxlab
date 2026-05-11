@@ -8,7 +8,12 @@ import { cn } from "@/lib/utils";
 
 const themes = [
   {
-    name: "Default",
+    name: "Cyber",
+    primary: "#0ea5e9", // Sky 500
+    secondary: "#f43f5e", // Rose 500
+  },
+  {
+    name: "Classic",
     primary: "#4f46e5", // Indigo 600
     secondary: "#ec4899", // Pink 500
   },
@@ -21,11 +26,6 @@ const themes = [
     name: "Orange",
     primary: "#f97316", // Orange 500
     secondary: "#8b5cf6", // Violet 500
-  },
-  {
-    name: "Cyber",
-    primary: "#0ea5e9", // Sky 500
-    secondary: "#f43f5e", // Rose 500
   },
 ];
 

@@ -66,22 +66,32 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "any" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
-    shortcut: "/favicon.ico",
+    shortcut: "/favicon.png",
   },
   manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "/",
+  },
+  verification: {
+    google: "google-site-verification-placeholder", // Replace with actual code from GSC
+  },
+  category: "technology",
 };
 
 export function generateViewport() {
   return {
     themeColor: [
-      { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-      { media: "(prefers-color-scheme: dark)", color: "#020617" },
+      { media: "(prefers-color-scheme: light)", color: "#00f3ff" }, // Cyber Cyan
+      { media: "(prefers-color-scheme: dark)", color: "#000000" },
     ],
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
   };
 }
 
@@ -95,6 +105,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Devryxlab",
+              "url": "https://devryxlab.com",
+              "logo": "https://devryxlab.com/logo.png",
+              "description": "Devryxlab builds high-performance web apps, mobile experiences, and digital products.",
+              "sameAs": [
+                "https://twitter.com/devryxlab",
+                "https://github.com/devryxlab",
+                "https://linkedin.com/company/devryxlab"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "",
+                "contactType": "customer service",
+                "availableLanguage": "en"
+              }
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${outfit.variable} antialiased`}
       >
