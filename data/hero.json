@@ -1,0 +1,25 @@
+{
+  "slides": [
+    {
+      "id": 1, 
+      "title": "Dynamic IT Services & Custom Solutions",
+      "description": "Solving your unique business challenges with intelligent technology and expertly engineered, purpose-built systems. We bridge the gap between vision and reality.",
+      "image": "/images/web-dev-v2.png",
+      "highlight": "AI-Powered"
+    },
+    {
+      "id": 2, 
+      "title": "Mobile-First Digital Transformation", 
+      "description": "Crafting intuitive, high-performance mobile experiences that engage users and drive growth. From concept to deployment, we deliver excellence.",
+      "image": "/images/mobile-app-v2.png",
+      "highlight": "Native & Cross-Platform"
+    },
+    {
+      "id": 3, 
+      "title": "Enterprise Cloud Infrastructure",
+      "description": "Secure, scalable, and resilient cloud architectures designed for the enterprise. Optimize your operations with our next-gen cloud solutions.",
+      "image": "/images/cloud-infra-v2.png",
+      "highlight": "Scalable & Secure"
+    }
+  ]
+}

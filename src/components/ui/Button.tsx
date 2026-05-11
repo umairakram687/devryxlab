@@ -1,0 +1,51 @@
+import * as React from "react";
+import { cn } from "@/lib/utils";
+import { Loader2 } from "lucide-react";
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "default" | "outline" | "ghost" | "link";
+  size?: "default" | "sm" | "lg" | "icon";
+  isLoading?: boolean; 
+}
+
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant = "default", size = "default", isLoading, children, ...props }, ref) => {
+    
+    const baseStyles = "relative inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 overflow-hidden group";
+    
+    const variants = {
+      default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_-5px_var(--primary)] hover:shadow-[0_0_25px_-5px_var(--primary)]",
+      outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+      ghost: "hover:bg-accent hover:text-accent-foreground",
+      link: "text-primary underline-offset-4 hover:underline",
+    };
+
+    const sizes = {
+      default: "h-10 px-4 py-2",
+      sm: "h-9 rounded-md px-3",
+      lg: "h-11 rounded-md px-8",
+      icon: "h-10 w-10",
+    };
+
+    return (
+      <button
+        className={cn(baseStyles, variants[variant], sizes[size], className)}
+        ref={ref}
+        disabled={isLoading || props.disabled}
+        {...props}
+      >
+        {/* Glow Effect on Hover for default variant */}
+        {variant === "default" && (
+          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer" />
+        )}
+        
+        {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin relative z-10" />}
+        <span className="relative z-10 flex items-center justify-center gap-2">{children}</span>
+      </button>
+    );
+  }
+);
+Button.displayName = "Button";
+
+export { Button };
