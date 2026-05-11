@@ -12,33 +12,33 @@ const team = [
     image: "/images/CEO.png",
     socials: {
       linkedin: "#",
-      twitter: "#",
-      instagram: "#",
+      
+      github: "#",
     },
     shape: "blob-1", // CSS class or SVG shape identifier
     accent: "bg-blue-500",
   },
   {
-    name: "Sarah Johnson",
-    role: "Product Manager",
-    bio: "Expert in product strategy and execution, ensuring that every project is aligned with our clients' visions and market needs.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
+    name: "Rana Zain Amin",
+    role: "Chief Technology Officer",
+    bio: "Tech innovator with a focus on scalable, robust solutions, driven to create impactful digital experiences with modern technologies.",
+    image: "/portfolio/sir-zain.png",
     socials: {
       linkedin: "#",
-      twitter: "#",
-      instagram: "#",
+      
+      github: "#",
     },
     shape: "blob-2",
     accent: "bg-pink-500",
   },
   {
-    name: "William Anderson",
-    role: "Chief Technology Officer",
-    bio: "Tech innovator with a focus on creating scalable, robust, and forward-thinking digital solutions.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800",
+    name: "Muhammad Abdullah",
+    role: "Product Manager",
+    bio: "Expert in product strategy and execution, ensuring that every project is aligned with our clients' visions and market needs.",
+    image: "/portfolio/abdullah.png",
     socials: {
       linkedin: "#",
-      twitter: "#",
+      
       github: "#",
     },
     shape: "blob-3",
@@ -121,16 +121,16 @@ export default function TeamSection() {
                           <Linkedin className="w-5 h-5" />
                         </a>
                       )}
-                       {member.socials.twitter && (
+                       {/* {member.socials.twitter && (
                         <a href={member.socials.twitter} className="text-neutral-500 hover:text-white transition-colors">
                           <Twitter className="w-5 h-5" />
                         </a>
-                      )}
-                       {member.socials.instagram && (
+                      )} */}
+                       {/* {member.socials.instagram && (
                         <a href={member.socials.instagram} className="text-neutral-500 hover:text-white transition-colors">
                           <Instagram className="w-5 h-5" />
                         </a>
-                      )}
+                      )} */}
                        {member.socials.github && (
                         <a href={member.socials.github} className="text-neutral-500 hover:text-white transition-colors">
                           <Github className="w-5 h-5" />

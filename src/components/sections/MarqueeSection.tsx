@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+// import img1 from "../../../public/portfolio/egplogomain2.svg";
+// import img2 from "../../../public/portfolio/Medirecords1.png";
 import { 
   Heart,
   Activity,
@@ -9,20 +11,24 @@ import {
   Layers,
   ShoppingBag
 } from "lucide-react";
+import Image from "next/image";
 
-// Initial set of logos using project names
+
+
+// Initial set of logos using project names // official set of logos using project names
 const logos = [
-  { name: "eGP Health", icon: Heart },
-  { name: "MediRecords", icon: Activity },
-  { name: "PanAsia", icon: Heart },
-  { name: "Spectrum", icon: Heart },
-  { name: "NeoTest", icon: Activity },
-  { name: "Tabbna", icon: Heart },
-  { name: "Medi-QR", icon: Shield },
-  { name: "ExerciseNow", icon: Activity },
-  { name: "Ribbon & Bow", icon: ShoppingBag },
-  { name: "Diamond Guys", icon: Zap },
+  { name: "eGP Health", icon: "/portfolio/egplogomain2.svg"  },
+  { name: "MediRecords", icon: "/portfolio/Medirecords1.png" },
+  { name: "PanAsia", icon: "/portfolio/panasia-logo.png" },
+  { name: "Spectrum", icon: "/portfolio/spectrum-logo.png" },
+  { name: "NeoTest", icon: "/portfolio/neotest-logo.png" },
+  { name: "Tabbna", icon: "/portfolio/tabbnalogo.svg"  },
+  { name: "Medi-QR", icon: "/portfolio/medi-qr-logo.png" },
+  { name: "ExerciseNow", icon: "/portfolio/exercisenow-logo.svg" },
+  { name: "Ribbon & Bow", icon: "/portfolio/ribbonandbow-logo.svg" },
+  { name: "Diamond Guys", icon: "/portfolio/DiamondLogo.png" },
 ];
+
 
 export default function MarqueeSection() {
   // Split logos for visual variety if desired, or use same set
@@ -37,6 +43,8 @@ export default function MarqueeSection() {
           We collaborate with leading companies to deliver exceptional digital experiences.
         </p>
       </div>
+
+   
 
       <div className="flex flex-col gap-10">
         {/* Row 1: Left to Right */}
@@ -59,7 +67,7 @@ export default function MarqueeSection() {
               {[...logos, ...logos, ...logos, ...logos].map((logo, index) => (
                 <div key={`r1-${index}`} className="flex items-center gap-3 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 cursor-pointer group">
                   <div className="p-3 bg-white/5 border border-white/10 rounded-xl group-hover:bg-white/10 transition-colors">
-                     <logo.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+                     <Image src={logo.icon} height={50} width={60} alt="jdkk" />
                   </div>
                   <span className="text-xl font-semibold text-white">
                     {logo.name}
@@ -88,7 +96,7 @@ export default function MarqueeSection() {
               {[...logos, ...logos, ...logos, ...logos].reverse().map((logo, index) => (
                  <div key={`r2-${index}`} className="flex items-center gap-3 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 cursor-pointer group">
                   <div className="p-3 bg-white/5 border border-white/10 rounded-xl group-hover:bg-white/10 transition-colors">
-                     <logo.icon className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+                    <Image src={logo.icon} height={50} width={60} alt="jdkk" />
                   </div>
                   <span className="text-xl font-semibold text-white">
                     {logo.name}
