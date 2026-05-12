@@ -100,7 +100,7 @@ export default function ProjectDetailModal({ project, isOpen, onClose }: Project
             className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
           >
             <div
-              className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-neutral-900 border border-white/10 rounded-2xl shadow-2xl pointer-events-auto"
+              className="relative w-full max-w-3xl max-h-[90vh] md:h-[70vh] overflow-y-auto bg-neutral-900 border border-white/10 rounded-2xl shadow-2xl pointer-events-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Top Bar with Visit Site & Close */}

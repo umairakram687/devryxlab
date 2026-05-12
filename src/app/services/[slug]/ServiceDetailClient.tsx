@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/layout/Header";
 import ContactSection from "@/components/sections/ContactSection";
 import { services } from "@/lib/data/services";
+import Image from "next/image";
 
 export default function ServiceDetailClient({ slug }: { slug: string }) {
   const service = services.find((s) => s.slug === slug);
@@ -70,7 +71,8 @@ export default function ServiceDetailClient({ slug }: { slug: string }) {
                {/* Abstract Visual Representation */}
                <div className="relative aspect-square rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl p-8 flex items-center justify-center">
                  <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-10`} />
-                 <service.icon className="w-64 h-64 text-white/20" />
+                 {/* <service.icon className="w-64 h-64 text-white/20" /> */}
+                 <Image src={service.image} height={600} width={600} alt="web_development" className="object-cover h-full w-full rounded-2xl" />
                  
                  {/* Floating Feature Cards */}
                  <motion.div 
@@ -79,6 +81,7 @@ export default function ServiceDetailClient({ slug }: { slug: string }) {
                     className="absolute top-1/4 right-0 bg-neutral-900/80 backdrop-blur-md border border-white/10 p-4 rounded-xl shadow-xl max-w-[200px]"
                  >
                    <div className="h-2 w-20 bg-neutral-700 rounded mb-2" />
+                   <p>{service.text}</p>
                    <div className="h-2 w-12 bg-neutral-700 rounded" />
                  </motion.div>
 
@@ -93,6 +96,7 @@ export default function ServiceDetailClient({ slug }: { slug: string }) {
                      </div>
                      <div>
                        <div className="h-2 w-16 bg-neutral-700 rounded mb-1" />
+                       <span>{service.text}</span>
                        <div className="h-2 w-10 bg-neutral-700 rounded" />
                      </div>
                    </div>

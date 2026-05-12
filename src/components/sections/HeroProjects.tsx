@@ -43,7 +43,7 @@ const projects = [
 
 const HeroProjects = () => {
   return (
-    <div className="relative w-full h-[500px] lg:h-[600px] perspective-1000 flex items-center justify-center">
+    <div className="relative w-full h-[500px] lg:h-[500px] mt-12  perspective-1000 flex items-center justify-center">
       <div className="relative w-full h-full max-w-[500px]">
         {projects.map((project, index) => (
           <motion.a
@@ -73,20 +73,20 @@ const HeroProjects = () => {
               y: -20,
               transition: { duration: 0.3, y: { duration: 0.3 } } 
             }}
-            className={`absolute w-[260px] md:w-[320px] aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] bg-neutral-900 group cursor-pointer ${project.className}`}
+            className={`absolute w-[260px] md:w-[280px] h-[180px] aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] bg-neutral-900 group cursor-pointer ${project.className}`}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               src={project.image}
               alt={project.title}
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110"
+              className="object-cover transition-transform duration-700 group-hover:scale-100"
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-20" />
             
             {/* Content Overlay */}
-            <div className="absolute inset-0 p-6 flex flex-col justify-end z-30 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <div className="absolute inset-0 p-8 flex flex-col justify-end z-30 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
               <div className="flex items-center gap-2 mb-2">
                  <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                  <span className="text-[10px] text-primary font-bold uppercase tracking-widest">Case Study</span>

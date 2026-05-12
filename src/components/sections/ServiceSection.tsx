@@ -69,6 +69,7 @@ function ServiceCard({
     >
       <div className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${service.color} text-white shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6`}>
         <service.icon className="w-8 h-8" />
+        
       </div>
       
       <h3 className="mb-3 text-2xl font-bold text-white transition-transform duration-300 origin-left group-hover:scale-105">

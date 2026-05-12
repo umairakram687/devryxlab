@@ -6,6 +6,7 @@ import {
   Cloud, 
   Database,
 } from "lucide-react";
+import { text } from "stream/consumers";
 
 export const services = [
   {
@@ -15,7 +16,9 @@ export const services = [
     description: "Custom websites tailored to your brand's unique needs and goals.",
     longDescription: "We build high-performance, scalable, and secure websites that drive growth. From corporate sites to complex web applications, our team uses the latest technologies to deliver exceptional digital experiences.",
     icon: Globe,
+    image:"/portfolio/web-development.png",
     color: "from-blue-400 to-blue-600",
+    text: "Web Development",
     portfolioImages: [
       { src: "/portfolio/tabbna.png", label: "Tabbna Academy", url: "https://academy.tabbna.sa/" },
       { src: "/portfolio/egphealth.png", label: "EGP Health", url: "#" },
@@ -45,7 +48,9 @@ export const services = [
     description: "Native and cross-platform mobile applications for iOS and Android.",
     longDescription: "Turn your ideas into powerful mobile apps. We specialize in creating intuitive, feature-rich applications for both iOS and Android platforms, ensuring a seamless user experience across devices.",
     icon: Smartphone,
+    image:"/portfolio/mobile-app.png",
     color: "from-purple-400 to-purple-600",
+    text: "Mobile Apps",
     portfolioImages: [
       { src: "/portfolio/mobibo.png", label: "Mobibo", url: "#" },
       { src: "/portfolio/halaair.png", label: "Hala Air", url: "#" },
@@ -75,7 +80,9 @@ export const services = [
     description: "Intuitive and engaging user interfaces that delight your customers.",
     longDescription: "Design is at the heart of everything we do. We create user-centric designs that are not only visually stunning but also intuitive and easy to navigate, ensuring high user retention and satisfaction.",
     icon: Layout,
+    image:"/portfolio/ui-ux.png",
     color: "from-pink-400 to-pink-600",
+    text: "UI/UX Design",
     portfolioImages: [
       { src: "/portfolio/dental_figma.png", label: "Dental Clinic App", url: "#" },
       { src: "/portfolio/exercisenow_figma.png", label: "ExerciseNow App", url: "#" },
@@ -105,7 +112,9 @@ export const services = [
     description: "Scalable cloud architecture and deployment services.",
     longDescription: "Leverage the power of the cloud to scale your business. We design and implement secure, robust cloud infrastructures that grow with your needs, reducing costs and improving efficiency.",
     icon: Cloud,
+    image:"/portfolio/cloud.png",
     color: "from-orange-400 to-orange-600",
+    text: "Cloud Solutions",
     portfolioImages: [
       { src: "/portfolio/egphealth.png", label: "EGP Health Platform", url: "#" },
       { src: "/portfolio/medirecords.png", label: "MediRecords SaaS", url: "#" },
@@ -135,7 +144,9 @@ export const services = [
     description: "Efficient and secure database schemas for your applications.",
     longDescription: "Data is your most valuable asset. We design and optimize database structures that ensure data integrity, security, and lightning-fast retrieval speeds for your applications.",
     icon: Database,
+    image:"/portfolio/database.png",
     color: "from-green-400 to-green-600",
+    text: "Database Design",
     portfolioImages: [
       { src: "/portfolio/medirecords.png", label: "MediRecords", url: "#" },
       { src: "/portfolio/egphealth.png", label: "EGP Health", url: "#" },
@@ -165,7 +176,9 @@ export const services = [
     description: "Seamless integration with third-party services and APIs.",
     longDescription: "Connect your systems for better efficiency. We build and integrate robust APIs that allow your software to communicate seamlessly with third-party services, enhancing functionality and automation.",
     icon: Code,
+    image:"/portfolio/api.png",
     color: "from-teal-400 to-teal-600",
+    text: "API Integration",
     portfolioImages: [
       { src: "/portfolio/neotest.png", label: "NeoTest API", url: "#" },
       { src: "/portfolio/mediqr.png", label: "Medi-QR API", url: "#" },

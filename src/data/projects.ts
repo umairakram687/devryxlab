@@ -91,13 +91,13 @@ export const projects: Record<string, Project[]> = {
     },
   ],
   ecommerce: [
-    {
-      title: "Kith",
-      description: "A multifunctional lifestyle brand for men, women, and kids, as well as a progressive retail establishment.",
-      image: "/portfolio/kith.png",
-      link: "https://kith.com/",
-      tags: ["E-Commerce", "Fashion", "Retail"],
-    },
+    // {
+    //   title: "Kith",
+    //   description: "A multifunctional lifestyle brand for men, women, and kids, as well as a progressive retail establishment.",
+    //   image: "/portfolio/kith.png",
+    //   link: "https://kith.com/",
+    //   tags: ["E-Commerce", "Fashion", "Retail"],
+    // },
     {
       title: "Rains",
       description: "An outer-layer lifestyle brand. Its collections blend a conceptual-meets-functional design approach.",
@@ -233,13 +233,13 @@ export const projects: Record<string, Project[]> = {
       link: "https://jcs-photo-suite.netlify.app/",
       tags: ["Photography", "Web", "Suite"],
     },
-    {
-      title: "Dawood Tahir Portfolio",
-      description: "A comprehensive web application providing intuitive user experience.",
-      image: "https://image.thum.io/get/width/1200/crop/800/https://dawood-tahir.netlify.app/",
-      link: "https://dawood-tahir.netlify.app/",
-      tags: ["Portfolio", "Web", "Personal"],
-    },
+    // {
+    //   title: "Dawood Tahir Portfolio",
+    //   description: "A comprehensive web application providing intuitive user experience.",
+    //   image: "https://image.thum.io/get/width/1200/crop/800/https://dawood-tahir.netlify.app/",
+    //   link: "https://dawood-tahir.netlify.app/",
+    //   tags: ["Portfolio", "Web", "Personal"],
+    // },
     {
       title: "Check my bills",
       description: "Web site created using create-react-app",

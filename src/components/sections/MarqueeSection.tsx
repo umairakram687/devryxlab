@@ -27,6 +27,38 @@ const logos = [
   { name: "ExerciseNow", icon: "/portfolio/exercisenow-logo.svg" },
   { name: "Ribbon & Bow", icon: "/portfolio/ribbonandbow-logo.svg" },
   { name: "Diamond Guys", icon: "/portfolio/DiamondLogo.png" },
+  { name: "Alura", icon: "/portfolio/Alura.svg"},
+  { name: "Astroshop", icon: "/Partners/astroshop.png"},
+  { name: "Auto Funnel", icon: "/Partners/autofunnel-logo.png"},
+  { name: "Boise Mold", icon: "/Partners/boise-mold.png"},
+  { name: "Check Mybills", icon: "/Partners/check-mybills.png"},
+  { name: "Dental Care", icon: "/Partners/dentalcare.png"},
+  { name: "Doctorim", icon: "/Partners/doctrim.png"},
+  { name: "Expat Cares", icon: "/Partners/expatcares.png"},
+  { name: "Flow Care", icon: "/Partners/flowCare.png"},
+  { name: "Foreign Match", icon: "/Partners/foreign-match.png"},
+  { name: "Frame Explorer", icon: "/Partners/frame-explorer.png"},
+  { name: "Girls Chat", icon: "/Partners/girls-chat.png"},
+  { name: "Hala Air", icon: "/Partners/hala-air.png"},
+  { name: "Jackpot Competition", icon: "/Partners/jackpot-competition.png"},
+  { name: "Ketofit", icon: "/Partners/keto-fit.png"},
+  { name: "Kitchen-Wrap", icon: "/Partners/kitchen-wrap.png"},
+  { name: "Mart Mint", icon: "/Partners/mart-mint.png"},
+  { name: "Max Bid", icon: "/Partners/max-bid.png"},
+  { name: "Mobibo", icon: "/Partners/mobibo-logo.png"},
+  { name: "Nawa Qare", icon: "/Partners/nawacare.png"},
+  { name: "Nonly", icon: "/Partners/nonly.png"},
+  { name: "No Stress", icon: "/Partners/no-stress.png"},
+  { name: "Slot Machine", icon: "/Partners/slot-machine.png"},
+  { name: "Special Forces", icon: "/Partners/special-forces.png"},
+  { name: "Stoned Collective", icon: "/Partners/Stoned-Collective.png"},
+  { name: "Top Supply", icon: "/Partners/top-supply.png"},
+  { name: "U.S.NRC", icon: "/Partners/usnrc.png"},
+  { name: "Zinatghar", icon: "/Partners/zinatghar.png"},
+
+
+
+
 ];
 
 
@@ -65,9 +97,9 @@ export default function MarqueeSection() {
             >
               {/* Quadruple the content to ensure smooth looping on large screens */}
               {[...logos, ...logos, ...logos, ...logos].map((logo, index) => (
-                <div key={`r1-${index}`} className="flex items-center gap-3 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 cursor-pointer group">
-                  <div className="p-3 bg-white/5 border border-white/10 rounded-xl group-hover:bg-white/10 transition-colors">
-                     <Image src={logo.icon} height={50} width={60} alt="jdkk" />
+                <div key={`r1-${index}`} className="flex items-center gap-3 shrink-0 opacity-100 transition-opacity duration-300 grayscale-0 cursor-pointer group">
+                  <div className="p-3  border border-white/10 rounded-xl bg-white/10 transition-colors">
+                     <Image src={logo.icon} height={70} width={100} alt="jdkk" />
                   </div>
                   <span className="text-xl font-semibold text-white">
                     {logo.name}
@@ -94,9 +126,9 @@ export default function MarqueeSection() {
               }}
             >
               {[...logos, ...logos, ...logos, ...logos].reverse().map((logo, index) => (
-                 <div key={`r2-${index}`} className="flex items-center gap-3 shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0 cursor-pointer group">
-                  <div className="p-3 bg-white/5 border border-white/10 rounded-xl group-hover:bg-white/10 transition-colors">
-                    <Image src={logo.icon} height={50} width={60} alt="jdkk" />
+                 <div key={`r2-${index}`} className="flex items-center gap-3 shrink-0 opacity-100 transition-opacity duration-300 grayscale-0 cursor-pointer group">
+                  <div className="p-3 border border-white/10 rounded-xl bg-white/10 transition-colors">
+                    <Image src={logo.icon} height={70} width={100} alt="jdkk" />
                   </div>
                   <span className="text-xl font-semibold text-white">
                     {logo.name}

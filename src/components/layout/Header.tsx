@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ",
         scrolled
           ? "bg-background/80 backdrop-blur-md border-b border-border/50 shadow-sm text-foreground"
           : isDarkHeroPage
@@ -45,7 +45,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8  ">
           {headerData.map((item) => (
             <Link
               key={item.href}
