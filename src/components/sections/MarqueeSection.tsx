@@ -54,7 +54,7 @@ const logos = [
   { name: "Stoned Collective", icon: "/Partners/Stoned-Collective.png"},
   { name: "Top Supply", icon: "/Partners/top-supply.png"},
   { name: "U.S.NRC", icon: "/Partners/usnrc.png"},
-  { name: "Zinatghar", icon: "/Partners/zinatghar.png"},
+  { name: "Zinatghar", icon: "/partners/zinatghar.png"},
 
 
 
@@ -99,6 +99,7 @@ export default function MarqueeSection() {
               {[...logos, ...logos, ...logos, ...logos].map((logo, index) => (
                 <div key={`r1-${index}`} className="flex items-center gap-3 shrink-0 opacity-100 transition-opacity duration-300 grayscale-0 cursor-pointer group">
                   <div className="p-3  border border-white/10 rounded-xl bg-white/10 transition-colors">
+                  
                      <Image src={logo.icon} height={70} width={100} alt="jdkk" />
                   </div>
                   <span className="text-xl font-semibold text-white">
