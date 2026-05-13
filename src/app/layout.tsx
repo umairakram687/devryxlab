@@ -114,6 +114,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Devryxlab",
               "url": "https://devryxlab.com",
+
               "logo": "https://devryxlab.com/logo.png",
               "description": "Devryxlab builds high-performance web apps, mobile experiences, and digital products.",
               "sameAs": [
